@@ -8,6 +8,7 @@ Since the dependencies for GraspNet and the ARX5 SDK conflict, it is recommended
 
 ### Environment 1: Control (arx5-sdk & orbbec)
 This environment handles camera data collection and robotic arm control. 
+For detailed information, please check the official repositories:
 * **ARX5 SDK**: [real-stanford/arx5-sdk](https://github.com/real-stanford/arx5-sdk)
 * **Orbbec SDK**: [orbbec/pyorbbecsdk](https://github.com/orbbec/pyorbbecsdk)
 ```bash
