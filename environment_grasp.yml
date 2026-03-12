@@ -1,0 +1,36 @@
+name: grasp_env
+channels:
+  - defaults
+  - conda-forge
+  - nvidia
+  - robostack-staging
+dependencies:
+  - python=3.10.19
+  - pip=25.3
+  - pyzmq=27.1.0
+  - zeromq=4.3.5
+  - cuda-toolkit=12.8.1
+  - openssl=3.6.0
+  - libgcc=15.2.0
+  - libstdcxx=15.2.0
+  - pip:
+      - torch==2.1.2+cu121
+      - torchvision==0.16.2+cu121
+      - torchaudio==2.1.2+cu121
+      - numpy==1.23.4
+      - opencv-python==4.11.0.86
+      - graspnetapi==1.2.11
+      - open3d==0.19.0
+      - scikit-image==0.24.0
+      - scipy==1.13.1
+      - matplotlib==3.10.7
+      - pyorbbecsdk2==2.0.15
+      - trimesh==4.9.0
+      - tqdm==4.67.1
+      - ninja==1.13.0
+      - flask==3.1.2
+      - requests==2.32.5
+      # 注意：如果你本地手动安装了 knn-pytorch 或 pointnet2，
+      # 建议在 README 中注明需要进入对应文件夹手动运行 setup.py 安装
+      - knn-pytorch==0.1
+      - pointnet2==0.0.0

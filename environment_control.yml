@@ -1,0 +1,30 @@
+name: control_env
+channels:
+  - conda-forge
+  - robostack-staging
+  - defaults
+dependencies:
+  - python=3.10.19
+  - pip=25.3
+  - cmake=4.1.3
+  - ninja=1.13.2
+  - pyzmq=27.1.0
+  - numpy=2.2.6
+  - eigen=3.4.0
+  - boost=1.85.0
+  - spdlog=1.16.0
+  # ROS Humble (Robostack) core components
+  - ros-humble-urdf=2.6.0
+  - ros-humble-kdl-parser=2.6.3
+  - ros-humble-ament-cmake=1.3.3
+  - pip:
+      - pyorbbecsdk==1.3.2
+      - pyorbbecsdk2==2.0.15
+      - opencv-python==4.12.0.88
+      - opencv-contrib-python==4.12.0.88
+      - torch==2.5.1+cu121
+      - torchvision==0.20.1+cu121
+      - pyyaml==6.0.3
+      - tqdm==4.67.1
+      - scipy==1.15.3
+      - pynput==1.8.1
